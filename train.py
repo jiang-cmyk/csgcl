@@ -6,6 +6,7 @@ from torch_geometric.utils import to_networkx
 
 from src import *
 
+from apex import amp
 
 def train(epoch: int) -> int:
     model.train()
@@ -27,9 +28,12 @@ def train(epoch: int) -> int:
                               t0=param['t0'],
                               gamma_max=param['gamma'],
                               batch_size=args.batch_size if args.dataset in ['Coauthor-CS'] else None)
-    loss.backward()
+    # loss.backward()
+    with amp.scale_loss(loss, optimizer) as scaled_loss:
+        scaled_loss.backward()   # loss要这么用
     optimizer.step()
     return loss.item()
+
 
 
 def test() -> Dict:
@@ -55,7 +59,38 @@ def test() -> Dict:
     res["acc"] = acc
     return res
 
+@torch.no_grad()
+def testn() ->Dict:
+    
+    model.eval()
+    z = model()
+    acc = model.test(z[data.train_mask], data.y[data.train_mask],
+                         z[data.test_mask], data.y[data.test_mask],
+                         max_iter=150)
+    return acc
 
+
+@torch.no_grad()
+def plot_points(colors):
+    model.eval()
+    z = model(torch.arange(data.num_nodes, device=device))
+    z = TSNE(n_components=2).fit_transform(z.cpu().numpy())
+    y = data.y.cpu().numpy()
+
+    plt.figure(figsize=(8, 8))
+    for i in range(dataset.num_classes):
+        plt.scatter(z[y == i, 0], z[y == i, 1], s=20, color=colors[i])
+        plt.axis('off')
+    plt.show()
+
+    colors = [
+        '#ffc0cb', '#bada55', '#008080', '#420420', '#7fe5f0', '#065535',
+        '#ffd700'
+    ]
+    plot_points(colors)
+    # test()
+    
+    
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
@@ -64,7 +99,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataset_path', type=str, default="./datasets")
     parser.add_argument('--param', type=str, default='local:wikics.json')
     parser.add_argument('--seed', type=int, default=39788)
-    parser.add_argument('--batch_size', type=int, default=1024)
+    parser.add_argument('--batch_size', type=int, default=128)
     parser.add_argument('--verbose', type=str, default='train,eval')
     parser.add_argument('--cls_seed', type=int, default=12345)
     parser.add_argument('--val_interval', type=int, default=100)
@@ -146,9 +181,10 @@ if __name__ == '__main__':
                   param['num_hidden'],
                   param['num_proj_hidden'],
                   param['tau']).to(device)
-    optimizer = torch.optim.Adam(model.parameters(),
+    optimizer = torch.optim.Adam(model.parameters(),  
                                  lr=param['learning_rate'],
                                  weight_decay=param['weight_decay'])
+    model, optimizer = amp.initialize(model, optimizer, opt_level='O0')
     last_epoch = 0
     log = args.verbose.split(',')
 
