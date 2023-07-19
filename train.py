@@ -2,11 +2,14 @@ import argparse
 import os.path as osp
 import random
 from typing import Dict
+
+import torch
 from torch_geometric.utils import to_networkx
 
+import os
 from src import *
 
-from apex import amp
+
 
 def train(epoch: int) -> int:
     model.train()
@@ -28,12 +31,9 @@ def train(epoch: int) -> int:
                               t0=param['t0'],
                               gamma_max=param['gamma'],
                               batch_size=args.batch_size if args.dataset in ['Coauthor-CS'] else None)
-    # loss.backward()
-    with amp.scale_loss(loss, optimizer) as scaled_loss:
-        scaled_loss.backward()   # loss要这么用
+    loss.backward()
     optimizer.step()
     return loss.item()
-
 
 
 def test() -> Dict:
@@ -58,6 +58,7 @@ def test() -> Dict:
         acc = cls_acc['acc']
     res["acc"] = acc
     return res
+
 
 @torch.no_grad()
 def testn() ->Dict:
@@ -162,15 +163,22 @@ if __name__ == '__main__':
     dataset = get_dataset(path, args.dataset)
     data = dataset[0]
     data = data.to(device)
-
-    print('Detecting communities...')
-    g = to_networkx(data, to_undirected=True)
-    communities = community_detection(args.cd)(g).communities
-    com = transition(communities, g.number_of_nodes())
-    com_cs, node_cs = community_strength(g, communities)
-    edge_weight = get_edge_weight(data.edge_index, com, com_cs)
-    com_size = [len(c) for c in communities]
-    print(f'Done! {len(com_size)} communities detected. \n')
+    p1 = './log/'+args.dataset+'_edge_weight.pt'
+    p2 = "./log/"+args.dataset+'_node_cs'
+    if os.path.isfile(p1) and os.path.isfile(p2+'.npy'):
+        edge_weight = torch.load(p1)
+        node_cs = np.load(p2+'.npy')
+    else:
+        print('Detecting communities...')
+        g = to_networkx(data, to_undirected=True)
+        communities = community_detection(args.cd)(g).communities
+        com = transition(communities, g.number_of_nodes())
+        com_cs, node_cs = community_strength(g, communities)
+        edge_weight = get_edge_weight(data.edge_index, com, com_cs)
+        com_size = [len(c) for c in communities]
+        print(f'Done! {len(com_size)} communities detected. \n')
+        torch.save(edge_weight, p1)
+        np.save(p2, node_cs)
 
     encoder = Encoder(dataset.num_features,
                       param['num_hidden'],
@@ -184,7 +192,6 @@ if __name__ == '__main__':
     optimizer = torch.optim.Adam(model.parameters(),  
                                  lr=param['learning_rate'],
                                  weight_decay=param['weight_decay'])
-    model, optimizer = amp.initialize(model, optimizer, opt_level='O0')
     last_epoch = 0
     log = args.verbose.split(',')
 
