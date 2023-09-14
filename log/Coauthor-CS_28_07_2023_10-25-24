@@ -1,0 +1,51 @@
+2023-07-28 10:25:24,188 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - device:cuda:0
+2023-07-28 10:25:24,188 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - dataset:Coauthor-CS
+2023-07-28 10:25:24,188 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - dataset_path:./datasets
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - param:local:coauthor_cs.json
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - seed:39788
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - batch_size:1024
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - verbose:train,eval
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - cls_seed:12345
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - val_interval:10
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - cd:leiden
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - ced_thr:1.0
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - cav_thr:1.0
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - learning_rate:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - num_hidden:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - num_proj_hidden:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - activation:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - base_model:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - num_layers:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - ced_drop_rate_1:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - ced_drop_rate_2:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - cav_drop_rate_1:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - cav_drop_rate_2:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - tau:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - num_epochs:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - weight_decay:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - t0:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - gamma:None
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - learning_rate:0.0005
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - num_hidden:256
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - num_proj_hidden:256
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - activation:rrelu
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - base_model:GCNConv
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - num_layers:2
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - ced_drop_rate_1:0.1
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - ced_drop_rate_2:0.1
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - cav_drop_rate_1:0.1
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - cav_drop_rate_2:0.5
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - tau:0.4
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - num_epochs:4600
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - weight_decay:1e-05
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - t0:1500
+2023-07-28 10:25:24,189 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - gamma:1
+2023-07-28 10:25:25,221 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - Detecting communities...
+2023-07-28 10:25:37,895 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - Done! 179 communities detected. 
+
+2023-07-28 10:25:41,622 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - (T) | Epoch=010, loss=10.4528
+2023-07-28 10:25:41,636 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - (E) | Epoch=0010, avg_acc = 0.9361306319780245
+2023-07-28 10:25:44,098 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - (T) | Epoch=020, loss=9.4396
+2023-07-28 10:25:44,112 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - (E) | Epoch=0020, avg_acc = 0.9361306319780245
+2023-07-28 10:25:46,564 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - (T) | Epoch=030, loss=9.2313
+2023-07-28 10:25:46,579 - Coauthor-CS_28_07_2023_10:25:24 - [INFO] - (E) | Epoch=0030, avg_acc = 0.9361306319780245

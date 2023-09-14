@@ -1,0 +1,45 @@
+2023-07-28 10:31:34,109 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - device:cuda:0
+2023-07-28 10:31:34,109 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - dataset:Amazon-Photo
+2023-07-28 10:31:34,109 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - dataset_path:./datasets
+2023-07-28 10:31:34,109 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - param:local:amazon_photo.json
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - seed:39788
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - batch_size:1024
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - verbose:train,eval
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - cls_seed:12345
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - val_interval:10
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - cd:leiden
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - ced_thr:1.0
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - cav_thr:1.0
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - learning_rate:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - num_hidden:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - num_proj_hidden:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - activation:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - base_model:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - num_layers:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - ced_drop_rate_1:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - ced_drop_rate_2:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - cav_drop_rate_1:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - cav_drop_rate_2:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - tau:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - num_epochs:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - weight_decay:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - t0:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - gamma:None
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - learning_rate:0.1
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - num_hidden:256
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - num_proj_hidden:64
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - activation:relu
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - base_model:GCNConv
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - num_layers:2
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - ced_drop_rate_1:0.5
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - ced_drop_rate_2:0.7
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - cav_drop_rate_1:0.1
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - cav_drop_rate_2:0.1
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - tau:0.3
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - num_epochs:3000
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - weight_decay:1e-05
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - t0:2000
+2023-07-28 10:31:34,110 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - gamma:1
+2023-07-28 10:31:34,859 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - Detecting communities...
+2023-07-28 10:31:39,131 - Amazon-Photo_28_07_2023_10:31:34 - [INFO] - Done! 195 communities detected. 
+

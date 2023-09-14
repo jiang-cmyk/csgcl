@@ -1,0 +1,320 @@
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - device:cuda:0
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - dataset:Amazon-Computers
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - dataset_path:./datasets
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - param:local:amazon_computers.json
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - seed:39788
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - batch_size:1024
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - verbose:train,eval
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - cls_seed:12345
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - val_interval:100
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - cd:leiden
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - ced_thr:1.0
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - cav_thr:1.0
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - learning_rate:None
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - num_hidden:None
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - num_proj_hidden:None
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - activation:None
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - base_model:None
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - num_layers:None
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - ced_drop_rate_1:None
+2023-07-28 11:01:46,187 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - ced_drop_rate_2:None
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - cav_drop_rate_1:None
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - cav_drop_rate_2:None
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - tau:None
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - num_epochs:None
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - weight_decay:None
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - t0:None
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - gamma:None
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - learning_rate:0.005
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - num_hidden:512
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - num_proj_hidden:128
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - activation:prelu
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - base_model:GCNConv
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - num_layers:2
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - ced_drop_rate_1:0.6
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - ced_drop_rate_2:0.7
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - cav_drop_rate_1:0.1
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - cav_drop_rate_2:0.1
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - tau:0.2
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - num_epochs:2500
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - weight_decay:1e-05
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - t0:2000
+2023-07-28 11:01:46,188 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - gamma:5
+2023-07-28 11:01:46,954 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - Detecting communities...
+2023-07-28 11:02:00,358 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - Done! 377 communities detected. 
+
+2023-07-28 11:02:02,886 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=010, loss=10.2101
+2023-07-28 11:02:04,351 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=020, loss=9.8280
+2023-07-28 11:02:05,770 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=030, loss=9.3392
+2023-07-28 11:02:07,202 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=040, loss=9.0613
+2023-07-28 11:02:08,622 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=050, loss=8.7752
+2023-07-28 11:02:10,035 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=060, loss=8.5876
+2023-07-28 11:02:11,447 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=070, loss=8.5141
+2023-07-28 11:02:12,849 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=080, loss=8.4253
+2023-07-28 11:02:14,266 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=090, loss=8.2615
+2023-07-28 11:02:15,685 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=100, loss=8.1136
+2023-07-28 11:02:15,773 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=0100, avg_acc = 0.9001590490478726
+2023-07-28 11:02:17,184 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=110, loss=8.0773
+2023-07-28 11:02:18,583 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=120, loss=8.0356
+2023-07-28 11:02:20,005 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=130, loss=8.0163
+2023-07-28 11:02:21,411 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=140, loss=8.0347
+2023-07-28 11:02:22,823 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=150, loss=7.9282
+2023-07-28 11:02:24,227 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=160, loss=7.9298
+2023-07-28 11:02:25,647 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=170, loss=7.8884
+2023-07-28 11:02:27,061 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=180, loss=7.8583
+2023-07-28 11:02:28,461 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=190, loss=7.7959
+2023-07-28 11:02:29,873 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=200, loss=7.6816
+2023-07-28 11:02:29,898 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=0200, avg_acc = 0.8968863573819132
+2023-07-28 11:02:31,303 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=210, loss=7.6099
+2023-07-28 11:02:32,719 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=220, loss=7.5950
+2023-07-28 11:02:34,128 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=230, loss=7.5162
+2023-07-28 11:02:35,539 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=240, loss=7.4765
+2023-07-28 11:02:36,961 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=250, loss=7.4370
+2023-07-28 11:02:38,374 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=260, loss=7.4229
+2023-07-28 11:02:39,795 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=270, loss=7.4150
+2023-07-28 11:02:41,216 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=280, loss=7.3611
+2023-07-28 11:02:42,621 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=290, loss=7.4006
+2023-07-28 11:02:44,039 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=300, loss=7.3450
+2023-07-28 11:02:44,064 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=0300, avg_acc = 0.905045911386682
+2023-07-28 11:02:45,476 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=310, loss=7.2892
+2023-07-28 11:02:46,894 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=320, loss=7.2508
+2023-07-28 11:02:48,295 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=330, loss=7.2295
+2023-07-28 11:02:49,696 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=340, loss=7.3231
+2023-07-28 11:02:51,116 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=350, loss=7.2395
+2023-07-28 11:02:52,534 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=360, loss=7.1536
+2023-07-28 11:02:53,947 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=370, loss=7.2189
+2023-07-28 11:02:55,355 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=380, loss=7.1348
+2023-07-28 11:02:56,772 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=390, loss=7.1519
+2023-07-28 11:02:58,193 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=400, loss=7.1790
+2023-07-28 11:02:58,218 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=0400, avg_acc = 0.9123157218840509
+2023-07-28 11:02:59,634 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=410, loss=7.1088
+2023-07-28 11:03:01,062 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=420, loss=7.1164
+2023-07-28 11:03:02,473 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=430, loss=7.0730
+2023-07-28 11:03:03,892 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=440, loss=7.1412
+2023-07-28 11:03:05,308 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=450, loss=7.1104
+2023-07-28 11:03:06,714 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=460, loss=7.0797
+2023-07-28 11:03:08,131 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=470, loss=6.9977
+2023-07-28 11:03:09,589 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=480, loss=7.0316
+2023-07-28 11:03:11,008 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=490, loss=7.0707
+2023-07-28 11:03:12,418 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=500, loss=7.0181
+2023-07-28 11:03:12,443 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=0500, avg_acc = 0.9155119773442514
+2023-07-28 11:03:13,848 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=510, loss=7.0291
+2023-07-28 11:03:15,267 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=520, loss=6.9769
+2023-07-28 11:03:16,679 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=530, loss=7.0152
+2023-07-28 11:03:18,097 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=540, loss=7.0049
+2023-07-28 11:03:19,615 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=550, loss=6.9320
+2023-07-28 11:03:21,156 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=560, loss=6.9530
+2023-07-28 11:03:22,656 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=570, loss=7.0629
+2023-07-28 11:03:24,067 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=580, loss=7.0122
+2023-07-28 11:03:25,484 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=590, loss=6.9488
+2023-07-28 11:03:26,886 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=600, loss=6.9779
+2023-07-28 11:03:26,911 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=0600, avg_acc = 0.9117015902601948
+2023-07-28 11:03:28,355 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=610, loss=6.9730
+2023-07-28 11:03:29,762 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=620, loss=6.9147
+2023-07-28 11:03:31,175 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=630, loss=7.0075
+2023-07-28 11:03:32,582 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=640, loss=6.9937
+2023-07-28 11:03:33,999 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=650, loss=6.8687
+2023-07-28 11:03:35,401 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=660, loss=7.0628
+2023-07-28 11:03:36,811 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=670, loss=6.9505
+2023-07-28 11:03:38,220 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=680, loss=6.8546
+2023-07-28 11:03:39,620 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=690, loss=6.8902
+2023-07-28 11:03:41,034 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=700, loss=6.8220
+2023-07-28 11:03:41,062 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=0700, avg_acc = 0.9079611576856152
+2023-07-28 11:03:42,482 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=710, loss=6.8205
+2023-07-28 11:03:43,896 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=720, loss=6.8389
+2023-07-28 11:03:45,301 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=730, loss=6.8972
+2023-07-28 11:03:46,717 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=740, loss=6.8247
+2023-07-28 11:03:48,131 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=750, loss=6.7554
+2023-07-28 11:03:49,539 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=760, loss=6.7688
+2023-07-28 11:03:50,956 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=770, loss=6.8175
+2023-07-28 11:03:52,374 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=780, loss=6.7909
+2023-07-28 11:03:53,776 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=790, loss=6.7879
+2023-07-28 11:03:55,194 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=800, loss=6.7540
+2023-07-28 11:03:55,220 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=0800, avg_acc = 0.8919074650473617
+2023-07-28 11:03:56,631 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=810, loss=6.7421
+2023-07-28 11:03:58,045 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=820, loss=6.7015
+2023-07-28 11:03:59,455 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=830, loss=6.7179
+2023-07-28 11:04:00,879 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=840, loss=6.7175
+2023-07-28 11:04:02,333 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=850, loss=6.6811
+2023-07-28 11:04:03,747 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=860, loss=6.6795
+2023-07-28 11:04:05,167 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=870, loss=6.7392
+2023-07-28 11:04:06,573 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=880, loss=6.6942
+2023-07-28 11:04:07,992 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=890, loss=6.6735
+2023-07-28 11:04:09,409 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=900, loss=6.6102
+2023-07-28 11:04:09,434 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=0900, avg_acc = 0.8876977695732025
+2023-07-28 11:04:10,850 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=910, loss=6.6171
+2023-07-28 11:04:12,269 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=920, loss=6.6694
+2023-07-28 11:04:13,674 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=930, loss=6.6625
+2023-07-28 11:04:15,088 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=940, loss=6.5976
+2023-07-28 11:04:16,528 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=950, loss=6.6406
+2023-07-28 11:04:17,941 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=960, loss=6.5918
+2023-07-28 11:04:19,407 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=970, loss=6.7315
+2023-07-28 11:04:20,824 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=980, loss=6.6475
+2023-07-28 11:04:22,247 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=990, loss=6.6618
+2023-07-28 11:04:23,656 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1000, loss=6.5728
+2023-07-28 11:04:23,682 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=1000, avg_acc = 0.8896362806553711
+2023-07-28 11:04:25,096 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1010, loss=6.5871
+2023-07-28 11:04:26,506 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1020, loss=6.6257
+2023-07-28 11:04:27,908 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1030, loss=6.5941
+2023-07-28 11:04:29,329 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1040, loss=6.5997
+2023-07-28 11:04:30,743 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1050, loss=6.5718
+2023-07-28 11:04:32,166 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1060, loss=6.5630
+2023-07-28 11:04:33,576 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1070, loss=6.5725
+2023-07-28 11:04:34,984 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1080, loss=6.5303
+2023-07-28 11:04:36,397 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1090, loss=6.5478
+2023-07-28 11:04:37,815 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1100, loss=6.5536
+2023-07-28 11:04:37,839 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=1100, avg_acc = 0.8809017796766019
+2023-07-28 11:04:39,256 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1110, loss=6.5762
+2023-07-28 11:04:40,675 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1120, loss=6.5747
+2023-07-28 11:04:42,081 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1130, loss=6.5266
+2023-07-28 11:04:43,497 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1140, loss=6.5282
+2023-07-28 11:04:44,911 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1150, loss=6.5047
+2023-07-28 11:04:46,320 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1160, loss=6.5364
+2023-07-28 11:04:47,734 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1170, loss=6.4916
+2023-07-28 11:04:49,156 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1180, loss=6.4992
+2023-07-28 11:04:50,560 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1190, loss=6.5043
+2023-07-28 11:04:51,976 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1200, loss=6.5978
+2023-07-28 11:04:52,000 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=1200, avg_acc = 0.8852979827353153
+2023-07-28 11:04:53,416 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1210, loss=6.4796
+2023-07-28 11:04:54,818 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1220, loss=6.4706
+2023-07-28 11:04:56,237 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1230, loss=6.5128
+2023-07-28 11:04:57,674 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1240, loss=6.4873
+2023-07-28 11:04:59,077 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1250, loss=6.5590
+2023-07-28 11:05:00,496 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1260, loss=6.5520
+2023-07-28 11:05:01,913 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1270, loss=6.4917
+2023-07-28 11:05:03,333 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1280, loss=6.4717
+2023-07-28 11:05:04,752 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1290, loss=6.4820
+2023-07-28 11:05:06,171 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1300, loss=6.4708
+2023-07-28 11:05:06,197 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=1300, avg_acc = 0.8737749345876409
+2023-07-28 11:05:07,612 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1310, loss=6.4376
+2023-07-28 11:05:09,036 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1320, loss=6.4863
+2023-07-28 11:05:10,454 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1330, loss=6.4733
+2023-07-28 11:05:11,872 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1340, loss=6.4982
+2023-07-28 11:05:13,295 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1350, loss=6.5241
+2023-07-28 11:05:14,721 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1360, loss=6.5065
+2023-07-28 11:05:16,140 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1370, loss=6.5050
+2023-07-28 11:05:17,557 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1380, loss=6.5078
+2023-07-28 11:05:18,969 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1390, loss=6.4714
+2023-07-28 11:05:20,388 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1400, loss=6.4511
+2023-07-28 11:05:20,414 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=1400, avg_acc = 0.8690783120199124
+2023-07-28 11:05:21,828 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1410, loss=6.4563
+2023-07-28 11:05:23,248 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1420, loss=6.4790
+2023-07-28 11:05:24,665 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1430, loss=6.4309
+2023-07-28 11:05:26,088 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1440, loss=6.4792
+2023-07-28 11:05:27,506 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1450, loss=6.4916
+2023-07-28 11:05:28,921 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1460, loss=6.4693
+2023-07-28 11:05:30,345 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1470, loss=6.4121
+2023-07-28 11:05:31,764 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1480, loss=6.4110
+2023-07-28 11:05:33,241 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1490, loss=6.4682
+2023-07-28 11:05:34,784 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1500, loss=6.4309
+2023-07-28 11:05:34,810 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=1500, avg_acc = 0.8820494932071195
+2023-07-28 11:05:36,278 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1510, loss=6.4182
+2023-07-28 11:05:37,728 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1520, loss=6.4410
+2023-07-28 11:05:39,193 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1530, loss=6.3723
+2023-07-28 11:05:40,691 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1540, loss=6.4136
+2023-07-28 11:05:42,145 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1550, loss=6.3916
+2023-07-28 11:05:43,599 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1560, loss=6.4206
+2023-07-28 11:05:45,043 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1570, loss=6.3717
+2023-07-28 11:05:46,480 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1580, loss=6.4349
+2023-07-28 11:05:47,918 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1590, loss=6.4097
+2023-07-28 11:05:49,356 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1600, loss=6.3911
+2023-07-28 11:05:49,383 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=1600, avg_acc = 0.8812889286824087
+2023-07-28 11:05:50,833 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1610, loss=6.3936
+2023-07-28 11:05:52,260 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1620, loss=6.4055
+2023-07-28 11:05:53,679 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1630, loss=6.4091
+2023-07-28 11:05:55,100 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1640, loss=6.4238
+2023-07-28 11:05:56,526 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1650, loss=6.4166
+2023-07-28 11:05:57,954 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1660, loss=6.3867
+2023-07-28 11:05:59,380 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1670, loss=6.4011
+2023-07-28 11:06:00,807 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1680, loss=6.4122
+2023-07-28 11:06:02,225 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1690, loss=6.3878
+2023-07-28 11:06:03,639 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1700, loss=6.3764
+2023-07-28 11:06:03,666 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=1700, avg_acc = 0.8867520349962101
+2023-07-28 11:06:05,107 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1710, loss=6.3930
+2023-07-28 11:06:06,558 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1720, loss=6.3793
+2023-07-28 11:06:08,066 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1730, loss=6.3563
+2023-07-28 11:06:09,495 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1740, loss=6.3760
+2023-07-28 11:06:10,934 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1750, loss=6.4011
+2023-07-28 11:06:12,389 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1760, loss=6.3860
+2023-07-28 11:06:13,859 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1770, loss=6.3212
+2023-07-28 11:06:15,353 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1780, loss=6.3329
+2023-07-28 11:06:16,798 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1790, loss=6.3507
+2023-07-28 11:06:18,329 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1800, loss=6.3574
+2023-07-28 11:06:18,346 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=1800, avg_acc = 0.8838608427717893
+2023-07-28 11:06:19,877 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1810, loss=6.4558
+2023-07-28 11:06:21,338 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1820, loss=6.3457
+2023-07-28 11:06:22,886 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1830, loss=6.3624
+2023-07-28 11:06:24,337 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1840, loss=6.3294
+2023-07-28 11:06:25,848 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1850, loss=6.3312
+2023-07-28 11:06:27,347 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1860, loss=6.3697
+2023-07-28 11:06:28,846 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1870, loss=6.3269
+2023-07-28 11:06:30,331 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1880, loss=6.3241
+2023-07-28 11:06:31,798 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1890, loss=6.3316
+2023-07-28 11:06:33,311 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1900, loss=6.3451
+2023-07-28 11:06:33,350 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=1900, avg_acc = 0.8820379848048261
+2023-07-28 11:06:34,817 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1910, loss=6.3368
+2023-07-28 11:06:36,338 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1920, loss=6.3201
+2023-07-28 11:06:37,823 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1930, loss=6.3982
+2023-07-28 11:06:39,261 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1940, loss=6.2876
+2023-07-28 11:06:40,696 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1950, loss=6.3438
+2023-07-28 11:06:42,138 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1960, loss=6.3244
+2023-07-28 11:06:43,591 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1970, loss=6.3706
+2023-07-28 11:06:45,029 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1980, loss=6.3747
+2023-07-28 11:06:46,483 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=1990, loss=6.3233
+2023-07-28 11:06:47,945 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2000, loss=6.3061
+2023-07-28 11:06:47,960 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=2000, avg_acc = 0.8892112357290105
+2023-07-28 11:06:49,439 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2010, loss=6.3055
+2023-07-28 11:06:50,888 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2020, loss=6.3177
+2023-07-28 11:06:52,377 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2030, loss=6.2960
+2023-07-28 11:06:53,830 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2040, loss=6.2994
+2023-07-28 11:06:55,276 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2050, loss=6.3046
+2023-07-28 11:06:56,791 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2060, loss=6.4165
+2023-07-28 11:06:58,315 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2070, loss=6.3237
+2023-07-28 11:06:59,889 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2080, loss=6.3360
+2023-07-28 11:07:01,476 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2090, loss=6.3138
+2023-07-28 11:07:02,972 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2100, loss=6.3678
+2023-07-28 11:07:03,004 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=2100, avg_acc = 0.878929147046025
+2023-07-28 11:07:04,515 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2110, loss=6.3308
+2023-07-28 11:07:06,013 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2120, loss=6.3335
+2023-07-28 11:07:07,512 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2130, loss=6.3162
+2023-07-28 11:07:09,016 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2140, loss=6.2862
+2023-07-28 11:07:10,509 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2150, loss=6.2813
+2023-07-28 11:07:12,034 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2160, loss=6.3027
+2023-07-28 11:07:13,556 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2170, loss=6.3320
+2023-07-28 11:07:15,179 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2180, loss=6.3746
+2023-07-28 11:07:16,677 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2190, loss=6.3165
+2023-07-28 11:07:18,130 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2200, loss=6.4152
+2023-07-28 11:07:18,159 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=2200, avg_acc = 0.8760737546959128
+2023-07-28 11:07:19,606 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2210, loss=6.3324
+2023-07-28 11:07:21,056 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2220, loss=6.3433
+2023-07-28 11:07:22,506 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2230, loss=6.3491
+2023-07-28 11:07:23,975 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2240, loss=6.3256
+2023-07-28 11:07:25,449 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2250, loss=6.3480
+2023-07-28 11:07:26,948 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2260, loss=6.3237
+2023-07-28 11:07:28,458 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2270, loss=6.3479
+2023-07-28 11:07:29,946 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2280, loss=6.3265
+2023-07-28 11:07:31,427 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2290, loss=6.3937
+2023-07-28 11:07:32,918 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2300, loss=6.3549
+2023-07-28 11:07:32,949 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=2300, avg_acc = 0.8872598902926416
+2023-07-28 11:07:34,566 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2310, loss=6.3617
+2023-07-28 11:07:36,142 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2320, loss=6.3467
+2023-07-28 11:07:37,694 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2330, loss=6.3551
+2023-07-28 11:07:39,227 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2340, loss=6.4268
+2023-07-28 11:07:40,760 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2350, loss=6.3928
+2023-07-28 11:07:42,299 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2360, loss=6.3924
+2023-07-28 11:07:43,827 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2370, loss=6.4554
+2023-07-28 11:07:45,381 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2380, loss=6.3832
+2023-07-28 11:07:46,890 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2390, loss=6.4158
+2023-07-28 11:07:48,411 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2400, loss=6.4097
+2023-07-28 11:07:48,441 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=2400, avg_acc = 0.900053087044668
+2023-07-28 11:07:49,966 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2410, loss=6.4031
+2023-07-28 11:07:51,483 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2420, loss=6.4160
+2023-07-28 11:07:53,022 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2430, loss=6.5020
+2023-07-28 11:07:54,546 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2440, loss=6.4411
+2023-07-28 11:07:56,073 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2450, loss=6.4302
+2023-07-28 11:07:57,625 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2460, loss=6.4477
+2023-07-28 11:07:59,177 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2470, loss=6.4634
+2023-07-28 11:08:00,663 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2480, loss=6.4642
+2023-07-28 11:08:02,157 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2490, loss=6.4571
+2023-07-28 11:08:03,615 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (T) | Epoch=2500, loss=6.5044
+2023-07-28 11:08:03,644 - Amazon-Computers_28_07_2023_11:01:46 - [INFO] - (E) | Epoch=2500, avg_acc = 0.898641161673761

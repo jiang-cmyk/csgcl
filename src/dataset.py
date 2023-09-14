@@ -7,7 +7,7 @@ def get_dataset(path, name):
     if name == 'Coauthor-CS':
         return Coauthor(root=path, name='cs', transform=T.NormalizeFeatures())
     if name == 'WikiCS':
-        return WikiCS(root=path, transform=T.NormalizeFeatures())
+        return WikiCS(root=path)#, transform=T.NormalizeFeatures())
     if name == 'Amazon-Computers':
         return Amazon(root=path, name='computers', transform=T.NormalizeFeatures())
     if name == 'Amazon-Photo':

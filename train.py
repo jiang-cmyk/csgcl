@@ -2,17 +2,26 @@ import argparse
 import os.path as osp
 import random
 from typing import Dict
+
+import torch
 from torch_geometric.utils import to_networkx
 
+from sklearn.metrics import roc_auc_score
+import os, sys, time
 from src import *
+import json
+import logging.config
 
+import torch_geometric.transforms as T
 
 def train(epoch: int) -> int:
     model.train()
     optimizer.zero_grad()
 
-    edge_index_1 = ced(data.edge_index, edge_weight, p=param['ced_drop_rate_1'], threshold=args.ced_thr)
-    edge_index_2 = ced(data.edge_index, edge_weight, p=param['ced_drop_rate_2'], threshold=args.ced_thr)
+    # print(data)
+    # print(train_data)
+    edge_index_1 = ced(train_data.edge_index, edge_weight, p=param['ced_drop_rate_1'], threshold=args.ced_thr)
+    edge_index_2 = ced(train_data.edge_index, edge_weight, p=param['ced_drop_rate_2'], threshold=args.ced_thr)
     if args.dataset == 'WikiCS':
         x1 = cav_dense(data.x, node_cs, param["cav_drop_rate_1"], max_threshold=args.cav_thr)
         x2 = cav_dense(data.x, node_cs, param["cav_drop_rate_2"], max_threshold=args.cav_thr)
@@ -35,7 +44,7 @@ def train(epoch: int) -> int:
 def test() -> Dict:
     model.eval()
     with torch.no_grad():
-        z = model(data.x, data.edge_index)
+        z = model(data.x, train_data.edge_index)
     res = {}
     seed = np.random.randint(0, 32767)
     split = generate_split(data.num_nodes, train_ratio=0.1, val_ratio=0.1,
@@ -56,21 +65,97 @@ def test() -> Dict:
     return res
 
 
+def testx() ->Dict:
+
+    model.eval()
+    with torch.no_grad():
+        z = model(data.x, data.edge_index)
+    res = {}
+    seed = np.random.randint(0, 32767)
+
+
+    if args.dataset == 'WikiCS':
+        accs = []
+        for i in range(20):
+            cls_acc = log_regwiki(z, data, i, n_epochs=1500)
+            accs.append(cls_acc)
+        acc = sum(accs) / len(accs)
+    else:
+        cls_acc = log_regx(z, data, n_epochs=150)
+        acc = cls_acc
+    res["acc"] = acc
+    return res
+
+def testlp() ->Dict:
+
+    model.eval()
+    with torch.no_grad():
+        z = model(data.x, data.edge_index)
+        res = {}
+    # seed = np.random.randint(0, 32767)
+    #
+    #
+    # if args.dataset == 'WikiCS':
+    #     accs = []
+    #     for i in range(20):
+    #         cls_acc = log_regwiki(z, data, i, n_epochs=150)
+    #         accs.append(cls_acc)
+    #     acc = sum(accs) / len(accs)
+    # else:
+    #     cls_acc = log_reglp(z, train_data, test_data, n_epochs=150)
+    #     acc = cls_acc
+        out = link_pre(z, test_data.edge_label_index).view(-1).sigmoid()
+        res["acc"] = roc_auc_score(test_data.edge_label.cpu().numpy(), out.cpu().numpy())
+ 
+    
+    return res
+
+
+def link_pre(z, edge_label_index):
+    # a = z[edge_label_index[0]]
+    # b = z[edge_label_index[1]]
+    # dot = (a*b).sum(dim=-1)
+    # mod_a = (a**2).sum(dim=-1)**0.5
+    # mod_b = (b**2).sum(dim=-1)**0.5
+    # return dot/(mod_a*mod_b)
+        return (z[edge_label_index[0]] * z[edge_label_index[1]]).sum(
+            dim=-1
+        )  # product of a pair of nodes on each edge
+ 
+def get_logger(name):
+    name += '_' + time.strftime('%d_%m_%Y') + '_' + time.strftime('%H:%M:%S')
+    config_dir = './config/'
+    log_dir = './log/'
+    config_dict = json.load(open( config_dir + 'log_config.json'))
+    config_dict['handlers']['file_handler']['filename'] = log_dir + name.replace('/', '-').replace(':', '-')
+
+    logging.config.dictConfig(config_dict)
+    logger = logging.getLogger(name)
+    #
+    std_out_format = '%(asctime)s- [%(levelname)s] - %(message)s'
+    consoleHandler = logging.StreamHandler(sys.stdout)
+    consoleHandler.setFormatter(logging.Formatter(std_out_format))
+    logger.addHandler(consoleHandler)
+
+    return logger   
+    
 if __name__ == '__main__':
 
+    print(torch.load('./save/Amazon-Photo_train'))
     parser = argparse.ArgumentParser()
     parser.add_argument('--device', type=str, default='cuda:0')
-    parser.add_argument('--dataset', type=str, default='WikiCS')
+    parser.add_argument('--dataset', type=str, default='Amazon-Photo', help="'WikiCS', 'Coauthor-CS', 'Amazon-Computers', 'Amazon-Photo'")
     parser.add_argument('--dataset_path', type=str, default="./datasets")
-    parser.add_argument('--param', type=str, default='local:wikics.json')
+    parser.add_argument('--param', type=str, default='local:amazon_photo.json', help="'wikics', 'coauthor_cs', 'amazon_computers', 'amazon_photo'")
     parser.add_argument('--seed', type=int, default=39788)
-    parser.add_argument('--batch_size', type=int, default=1024)
+    parser.add_argument('--batch_size', type=int, default=1024 )
     parser.add_argument('--verbose', type=str, default='train,eval')
     parser.add_argument('--cls_seed', type=int, default=12345)
     parser.add_argument('--val_interval', type=int, default=100)
     parser.add_argument('--cd', type=str, default='leiden')
     parser.add_argument('--ced_thr', type=float, default=1.)
     parser.add_argument('--cav_thr', type=float, default=1.)
+
 
     default_param = {
         'learning_rate': 0.01,
@@ -101,20 +186,16 @@ if __name__ == '__main__':
     comment = f'{args.dataset}_node_{param["cav_drop_rate_1"]}_{param["cav_drop_rate_2"]}'\
               f'_edge_{param["ced_drop_rate_1"]}_{param["ced_drop_rate_2"]}'\
               f'_t0_{param["t0"]}_gamma_{param["gamma"]}'
+              
+    logger        = get_logger(args.dataset)
+    
+    for arg in vars(args):
+        logger.info(arg + ':'+ str(getattr(args, arg)))  # getattr() 函数是获取args中arg的属性值
+    for key in param_keys:
+        logger.info(key+':'+ str(param[key]))
+        
     if not args.device == 'cpu':
         args.device = 'cuda'
-
-    print(f"training settings: \n"
-          f"data: {args.dataset}\n"
-          f"community detection method: {args.cd}\n"
-          f"device: {args.device}\n"
-          f"batch size if used: {args.batch_size}\n"
-          f"communal edge dropping (ced) rate: {param['ced_drop_rate_1']}/{param['ced_drop_rate_2']}\n"
-          f"communal attr voting (cav) rate: {param['cav_drop_rate_1']}/{param['cav_drop_rate_2']}\n"
-          f"gamma: {param['gamma']}\n"
-          f"t0: {param['t0']}\n"
-          f"epochs: {param['num_epochs']}\n"
-          )
 
     random.seed(12345)
     torch.manual_seed(args.seed)
@@ -126,16 +207,36 @@ if __name__ == '__main__':
     path = osp.join(args.dataset_path, args.dataset)
     dataset = get_dataset(path, args.dataset)
     data = dataset[0]
+    # print(data)
     data = data.to(device)
-
-    print('Detecting communities...')
-    g = to_networkx(data, to_undirected=True)
-    communities = community_detection(args.cd)(g).communities
-    com = transition(communities, g.number_of_nodes())
-    com_cs, node_cs = community_strength(g, communities)
-    edge_weight = get_edge_weight(data.edge_index, com, com_cs)
-    com_size = [len(c) for c in communities]
-    print(f'Done! {len(com_size)} communities detected. \n')
+    split = T.RandomLinkSplit(
+        num_val=0.0,
+        num_test=0.2,
+        is_undirected=True,
+        add_negative_train_samples=False,
+        neg_sampling_ratio=1.0,
+     )
+    train_data, val_data, test_data = split(data)
+    # logger.info(data.num_nodes)
+    # logger.info(data.num_node_features)
+    print(torch.load('./sava/Amazon-Photo_train'))
+    
+    p1 = './log/par/'+args.dataset+'edge_weight.pt'
+    p2 = "./log/par/"+args.dataset+'node_cs'
+    if os.path.isfile(p1) and os.path.isfile(p2+'.npy'):
+        edge_weight = torch.load(p1)
+        node_cs = np.load(p2+'.npy')
+    else:
+        logger.info('Detecting communities...')
+        g = to_networkx(train_data, to_undirected=True)
+        communities = community_detection(args.cd)(g).communities
+        com = transition(communities, g.number_of_nodes())
+        com_cs, node_cs = community_strength(g, communities)
+        edge_weight = get_edge_weight(train_data.edge_index, com, com_cs)
+        com_size = [len(c) for c in communities]
+        logger.info(f'Done! {len(com_size)} communities detected. \n')
+        torch.save(edge_weight, p1)
+        np.save(p2, node_cs)
 
     encoder = Encoder(dataset.num_features,
                       param['num_hidden'],
@@ -146,17 +247,29 @@ if __name__ == '__main__':
                   param['num_hidden'],
                   param['num_proj_hidden'],
                   param['tau']).to(device)
-    optimizer = torch.optim.Adam(model.parameters(),
+    optimizer = torch.optim.Adam(model.parameters(),  
                                  lr=param['learning_rate'],
                                  weight_decay=param['weight_decay'])
     last_epoch = 0
     log = args.verbose.split(',')
 
+
+
+    
+    # print(data)
+    # print(train_data)
     for epoch in range(1 + last_epoch, param['num_epochs'] + 1):
         loss = train(epoch)
-        if 'train' in log:
-            print(f'(T) | Epoch={epoch:03d}, loss={loss:.4f}')
+        if 'train' in log and not epoch % 10:
+            logger.info(f'(T) | Epoch={epoch:03d}, loss={loss:.4f}')
         if epoch % args.val_interval == 0:
+            # res = testx()
             res = test()
             if 'eval' in log:
-                print(f'(E) | Epoch={epoch:04d}, avg_acc = {res["acc"]}')
+                logger.info(f'(E) | Epoch={epoch:04d}, avg_acc = {res["acc"]}')
+        if epoch % 500 == 0:
+            with torch.no_grad():
+                torch.save(model(data.x, train_data.edge_index) , './save/{}_{:.2}'.format(args.dataset, epoch/param['num_epochs']))
+    torch.save(train_data , './save/{}_train'.format(args.dataset))
+    torch.save(test_data , './save/{}_test'.format(args.dataset))
+    

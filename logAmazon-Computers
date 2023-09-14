@@ -1,0 +1,54 @@
+2023-07-21 18:49:39,939 - Amazon-Computers - [INFO] - Detecting communities...
+2023-07-21 18:49:54,640 - Amazon-Computers - [INFO] - Done! 330 communities detected. 
+
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,544 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,545 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,545 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,545 - Amazon-Computers - [INFO] - None
+2023-07-21 18:51:58,656 - Amazon-Computers - [INFO] - Detecting communities...
+2023-07-21 18:52:12,778 - Amazon-Computers - [INFO] - Done! 329 communities detected. 
+
+2023-07-21 18:52:16,194 - Amazon-Computers - [INFO] - (T) | Epoch=010, loss=9.7116
+2023-07-21 18:52:17,712 - Amazon-Computers - [INFO] - (T) | Epoch=020, loss=9.4947
+2023-07-21 18:52:19,250 - Amazon-Computers - [INFO] - (T) | Epoch=030, loss=9.0960
+2023-07-21 18:52:20,778 - Amazon-Computers - [INFO] - (T) | Epoch=040, loss=8.8762
+2023-07-21 18:52:22,332 - Amazon-Computers - [INFO] - (T) | Epoch=050, loss=8.9123
+2023-07-21 18:52:23,809 - Amazon-Computers - [INFO] - (T) | Epoch=060, loss=8.8319
+2023-07-21 18:52:25,300 - Amazon-Computers - [INFO] - (T) | Epoch=070, loss=8.5651
+2023-07-21 18:52:26,745 - Amazon-Computers - [INFO] - (T) | Epoch=080, loss=8.4679
+2023-07-21 18:52:28,211 - Amazon-Computers - [INFO] - (T) | Epoch=090, loss=8.2632
+2023-07-21 18:52:29,719 - Amazon-Computers - [INFO] - (T) | Epoch=100, loss=8.1581
+2023-07-21 18:52:30,014 - Amazon-Computers - [INFO] - (E) | Epoch=0100, avg_acc = 0.761090909090909
+2023-07-21 18:52:31,546 - Amazon-Computers - [INFO] - (T) | Epoch=110, loss=8.1016
+2023-07-21 18:52:33,046 - Amazon-Computers - [INFO] - (T) | Epoch=120, loss=8.0655
+2023-07-21 18:52:34,575 - Amazon-Computers - [INFO] - (T) | Epoch=130, loss=7.9079
+2023-07-21 18:52:36,085 - Amazon-Computers - [INFO] - (T) | Epoch=140, loss=7.8511
+2023-07-21 18:52:37,602 - Amazon-Computers - [INFO] - (T) | Epoch=150, loss=7.8445
+2023-07-21 18:52:39,106 - Amazon-Computers - [INFO] - (T) | Epoch=160, loss=7.7448
+2023-07-21 18:52:40,614 - Amazon-Computers - [INFO] - (T) | Epoch=170, loss=7.6993
+2023-07-21 18:52:42,087 - Amazon-Computers - [INFO] - (T) | Epoch=180, loss=7.7020
+2023-07-21 18:52:43,524 - Amazon-Computers - [INFO] - (T) | Epoch=190, loss=7.6522
+2023-07-21 18:52:45,013 - Amazon-Computers - [INFO] - (T) | Epoch=200, loss=7.7115
+2023-07-21 18:52:45,246 - Amazon-Computers - [INFO] - (E) | Epoch=0200, avg_acc = 0.8581818181818182
+2023-07-21 18:52:46,687 - Amazon-Computers - [INFO] - (T) | Epoch=210, loss=7.6453
+2023-07-21 18:52:48,176 - Amazon-Computers - [INFO] - (T) | Epoch=220, loss=7.6482
+2023-07-21 18:52:49,639 - Amazon-Computers - [INFO] - (T) | Epoch=230, loss=7.6217
+2023-07-21 18:52:51,087 - Amazon-Computers - [INFO] - (T) | Epoch=240, loss=7.6191
+2023-07-21 18:52:52,543 - Amazon-Computers - [INFO] - (T) | Epoch=250, loss=7.5469
+2023-07-21 18:52:53,991 - Amazon-Computers - [INFO] - (T) | Epoch=260, loss=7.5168
+2023-07-21 18:52:55,460 - Amazon-Computers - [INFO] - (T) | Epoch=270, loss=7.4312
+2023-07-21 18:52:56,923 - Amazon-Computers - [INFO] - (T) | Epoch=280, loss=7.5307
+2023-07-21 18:52:58,396 - Amazon-Computers - [INFO] - (T) | Epoch=290, loss=7.4242
+2023-07-21 18:52:59,906 - Amazon-Computers - [INFO] - (T) | Epoch=300, loss=7.3293
+2023-07-21 18:53:00,141 - Amazon-Computers - [INFO] - (E) | Epoch=0300, avg_acc = 0.8705454545454545

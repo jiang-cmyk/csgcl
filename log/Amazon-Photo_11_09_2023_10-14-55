@@ -1,0 +1,47 @@
+2023-09-11 10:14:55,373 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - device:cuda:0
+2023-09-11 10:14:55,373 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - dataset:Amazon-Photo
+2023-09-11 10:14:55,373 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - dataset_path:./datasets
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - param:local:amazon_photo.json
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - seed:39788
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - batch_size:1024
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - verbose:train,eval
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - cls_seed:12345
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - val_interval:100
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - cd:leiden
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - ced_thr:1.0
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - cav_thr:1.0
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - learning_rate:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - num_hidden:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - num_proj_hidden:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - activation:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - base_model:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - num_layers:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - ced_drop_rate_1:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - ced_drop_rate_2:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - cav_drop_rate_1:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - cav_drop_rate_2:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - tau:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - num_epochs:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - weight_decay:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - t0:None
+2023-09-11 10:14:55,374 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - gamma:None
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - learning_rate:0.1
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - num_hidden:256
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - num_proj_hidden:64
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - activation:relu
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - base_model:GCNConv
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - num_layers:2
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - ced_drop_rate_1:0.5
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - ced_drop_rate_2:0.7
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - cav_drop_rate_1:0.1
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - cav_drop_rate_2:0.1
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - tau:0.3
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - num_epochs:3000
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - weight_decay:1e-05
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - t0:2000
+2023-09-11 10:14:55,375 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - gamma:1
+2023-09-11 10:14:57,193 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - (T) | Epoch=010, loss=9.6355
+2023-09-11 10:14:57,555 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - (T) | Epoch=020, loss=9.6355
+2023-09-11 10:14:57,920 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - (T) | Epoch=030, loss=9.6355
+2023-09-11 10:14:58,326 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - (T) | Epoch=040, loss=9.6355
+2023-09-11 10:14:58,754 - Amazon-Photo_11_09_2023_10:14:55 - [INFO] - (T) | Epoch=050, loss=9.6355

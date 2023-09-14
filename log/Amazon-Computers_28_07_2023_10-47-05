@@ -1,0 +1,49 @@
+2023-07-28 10:47:05,508 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - device:cuda:0
+2023-07-28 10:47:05,508 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - dataset:Amazon-Computers
+2023-07-28 10:47:05,508 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - dataset_path:./datasets
+2023-07-28 10:47:05,508 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - param:local:amazon_computers.json
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - seed:39788
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - batch_size:1024
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - verbose:train,eval
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - cls_seed:12345
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - val_interval:10
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - cd:leiden
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - ced_thr:1.0
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - cav_thr:1.0
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - learning_rate:None
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - num_hidden:None
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - num_proj_hidden:None
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - activation:None
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - base_model:None
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - num_layers:None
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - ced_drop_rate_1:None
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - ced_drop_rate_2:None
+2023-07-28 10:47:05,509 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - cav_drop_rate_1:None
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - cav_drop_rate_2:None
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - tau:None
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - num_epochs:None
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - weight_decay:None
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - t0:None
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - gamma:None
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - learning_rate:0.005
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - num_hidden:512
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - num_proj_hidden:128
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - activation:prelu
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - base_model:GCNConv
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - num_layers:2
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - ced_drop_rate_1:0.6
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - ced_drop_rate_2:0.7
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - cav_drop_rate_1:0.1
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - cav_drop_rate_2:0.1
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - tau:0.2
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - num_epochs:2500
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - weight_decay:1e-05
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - t0:2000
+2023-07-28 10:47:05,510 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - gamma:5
+2023-07-28 10:47:06,437 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - Detecting communities...
+2023-07-28 10:47:07,980 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - Done! 3378 communities detected. 
+
+2023-07-28 10:47:10,018 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - (T) | Epoch=010, loss=9.5493
+2023-07-28 10:47:10,160 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - (E) | Epoch=0010, avg_acc = 0.5445249361001194
+2023-07-28 10:47:11,415 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - (T) | Epoch=020, loss=9.4380
+2023-07-28 10:47:11,479 - Amazon-Computers_28_07_2023_10:47:05 - [INFO] - (E) | Epoch=0020, avg_acc = 0.5445249361001194
