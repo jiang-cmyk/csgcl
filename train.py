@@ -6,13 +6,18 @@ from typing import Dict
 import torch
 from torch_geometric.utils import to_networkx
 
+<<<<<<< HEAD
 from sklearn.metrics import roc_auc_score
 import os, sys, time
+=======
+import os
+>>>>>>> e012940f83f2f427b2bcf29a82fc60c0a007227a
 from src import *
 import json
 import logging.config
 
 import torch_geometric.transforms as T
+
 
 def train(epoch: int) -> int:
     model.train()
@@ -65,6 +70,7 @@ def test() -> Dict:
     return res
 
 
+<<<<<<< HEAD
 def testx() ->Dict:
 
     model.eval()
@@ -138,6 +144,39 @@ def get_logger(name):
     logger.addHandler(consoleHandler)
 
     return logger   
+=======
+@torch.no_grad()
+def testn() ->Dict:
+    
+    model.eval()
+    z = model()
+    acc = model.test(z[data.train_mask], data.y[data.train_mask],
+                         z[data.test_mask], data.y[data.test_mask],
+                         max_iter=150)
+    return acc
+
+
+@torch.no_grad()
+def plot_points(colors):
+    model.eval()
+    z = model(torch.arange(data.num_nodes, device=device))
+    z = TSNE(n_components=2).fit_transform(z.cpu().numpy())
+    y = data.y.cpu().numpy()
+
+    plt.figure(figsize=(8, 8))
+    for i in range(dataset.num_classes):
+        plt.scatter(z[y == i, 0], z[y == i, 1], s=20, color=colors[i])
+        plt.axis('off')
+    plt.show()
+
+    colors = [
+        '#ffc0cb', '#bada55', '#008080', '#420420', '#7fe5f0', '#065535',
+        '#ffd700'
+    ]
+    plot_points(colors)
+    # test()
+    
+>>>>>>> e012940f83f2f427b2bcf29a82fc60c0a007227a
     
 if __name__ == '__main__':
 
@@ -148,7 +187,11 @@ if __name__ == '__main__':
     parser.add_argument('--dataset_path', type=str, default="./datasets")
     parser.add_argument('--param', type=str, default='local:amazon_photo.json', help="'wikics', 'coauthor_cs', 'amazon_computers', 'amazon_photo'")
     parser.add_argument('--seed', type=int, default=39788)
+<<<<<<< HEAD
     parser.add_argument('--batch_size', type=int, default=1024 )
+=======
+    parser.add_argument('--batch_size', type=int, default=128)
+>>>>>>> e012940f83f2f427b2bcf29a82fc60c0a007227a
     parser.add_argument('--verbose', type=str, default='train,eval')
     parser.add_argument('--cls_seed', type=int, default=12345)
     parser.add_argument('--val_interval', type=int, default=100)
@@ -209,6 +252,7 @@ if __name__ == '__main__':
     data = dataset[0]
     # print(data)
     data = data.to(device)
+<<<<<<< HEAD
     split = T.RandomLinkSplit(
         num_val=0.0,
         num_test=0.2,
@@ -223,10 +267,15 @@ if __name__ == '__main__':
     
     p1 = './log/par/'+args.dataset+'edge_weight.pt'
     p2 = "./log/par/"+args.dataset+'node_cs'
+=======
+    p1 = './log/'+args.dataset+'_edge_weight.pt'
+    p2 = "./log/"+args.dataset+'_node_cs'
+>>>>>>> e012940f83f2f427b2bcf29a82fc60c0a007227a
     if os.path.isfile(p1) and os.path.isfile(p2+'.npy'):
         edge_weight = torch.load(p1)
         node_cs = np.load(p2+'.npy')
     else:
+<<<<<<< HEAD
         logger.info('Detecting communities...')
         g = to_networkx(train_data, to_undirected=True)
         communities = community_detection(args.cd)(g).communities
@@ -235,6 +284,16 @@ if __name__ == '__main__':
         edge_weight = get_edge_weight(train_data.edge_index, com, com_cs)
         com_size = [len(c) for c in communities]
         logger.info(f'Done! {len(com_size)} communities detected. \n')
+=======
+        print('Detecting communities...')
+        g = to_networkx(data, to_undirected=True)
+        communities = community_detection(args.cd)(g).communities
+        com = transition(communities, g.number_of_nodes())
+        com_cs, node_cs = community_strength(g, communities)
+        edge_weight = get_edge_weight(data.edge_index, com, com_cs)
+        com_size = [len(c) for c in communities]
+        print(f'Done! {len(com_size)} communities detected. \n')
+>>>>>>> e012940f83f2f427b2bcf29a82fc60c0a007227a
         torch.save(edge_weight, p1)
         np.save(p2, node_cs)
 
