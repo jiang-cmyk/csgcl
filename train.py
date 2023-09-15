@@ -25,8 +25,8 @@ def train(epoch: int) -> int:
 
     # print(data)
     # print(train_data)
-    edge_index_1 = ced(train_data.edge_index, edge_weight, p=param['ced_drop_rate_1'], threshold=args.ced_thr)
-    edge_index_2 = ced(train_data.edge_index, edge_weight, p=param['ced_drop_rate_2'], threshold=args.ced_thr)
+    edge_index_1 = ced(data.edge_index, edge_weight, p=param['ced_drop_rate_1'], threshold=args.ced_thr)
+    edge_index_2 = ced(data.edge_index, edge_weight, p=param['ced_drop_rate_2'], threshold=args.ced_thr)
     if args.dataset == 'WikiCS':
         x1 = cav_dense(data.x, node_cs, param["cav_drop_rate_1"], max_threshold=args.cav_thr)
         x2 = cav_dense(data.x, node_cs, param["cav_drop_rate_2"], max_threshold=args.cav_thr)
@@ -190,7 +190,6 @@ if __name__ == '__main__':
 # <<<<<<< HEAD
     parser.add_argument('--batch_size', type=int, default=1024 )
 # =======
-    parser.add_argument('--batch_size', type=int, default=128)
 # >>>>>>> e012940f83f2f427b2bcf29a82fc60c0a007227a
     parser.add_argument('--verbose', type=str, default='train,eval')
     parser.add_argument('--cls_seed', type=int, default=12345)
@@ -263,7 +262,7 @@ if __name__ == '__main__':
     train_data, val_data, test_data = split(data)
     # logger.info(data.num_nodes)
     # logger.info(data.num_node_features)
-    print(torch.load('./sava/Amazon-Photo_train'))
+    # print(torch.load('./sava/Amazon-Photo_train'))
     
     p1 = './log/par/'+args.dataset+'edge_weight.pt'
     p2 = "./log/par/"+args.dataset+'node_cs'
@@ -274,11 +273,11 @@ if __name__ == '__main__':
         node_cs = np.load(p2+'.npy')
     else:
         logger.info('Detecting communities...')
-        g = to_networkx(train_data, to_undirected=True)
+        g = to_networkx(data, to_undirected=True)
         communities = community_detection(args.cd)(g).communities
         com = transition(communities, g.number_of_nodes())
         com_cs, node_cs = community_strength(g, communities)
-        edge_weight = get_edge_weight(train_data.edge_index, com, com_cs)
+        edge_weight = get_edge_weight(data.edge_index, com, com_cs)
         com_size = [len(c) for c in communities]
         logger.info(f'Done! {len(com_size)} communities detected. \n')
         print('Detecting communities...')
@@ -321,9 +320,10 @@ if __name__ == '__main__':
             res = test()
             if 'eval' in log:
                 logger.info(f'(E) | Epoch={epoch:04d}, avg_acc = {res["acc"]}')
-        if epoch % 500 == 0:
-            with torch.no_grad():
-                torch.save(model(data.x, train_data.edge_index) , './save/{}_{:.2}'.format(args.dataset, epoch/param['num_epochs']))
-    torch.save(train_data , './save/{}_train'.format(args.dataset))
-    torch.save(test_data , './save/{}_test'.format(args.dataset))
+        # if epoch % 500 == 0:
+            # with torch.no_grad():
+                # torch.save(model(data.x, train_data.edge_index) , './save/{}_{:.2}'.format(args.dataset, epoch/param['num_epochs']))
+    # torch.save(train_data , './save/{}_train'.format(args.dataset))
+    # torch.save(test_data , './save/{}_test'.format(args.dataseset))
+    # torch.save(test_data , './save/{}_test'.format(args.dataset))
     
